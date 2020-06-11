@@ -1,11 +1,36 @@
 #define _______ KC_TRNS
 
+//More HSV shades
+#define HSV_OFF 0, 0, 0
+
+#define HSV_WHITE_PART 0, 0
+#define HSV_RED_PART 0, 255
+#define HSV_CORAL_PART 11, 176
+#define HSV_ORANGE_PART 28, 255
+#define HSV_GOLDENROD_PART 30, 218
+#define HSV_GOLD_PART 36, 255
+#define HSV_YELLOW_PART 43, 255
+#define HSV_CHARTREUSE_PART 64, 255
+#define HSV_GREEN_PART 85, 255
+#define HSV_SPRINGGREEN_PART 106, 255
+#define HSV_TURQUOISE_PART 123, 90
+#define HSV_TEAL_PART 128, 255
+#define HSV_CYAN_PART 128, 255
+#define HSV_AZURE_PART 132, 102
+#define HSV_BLUE_PART 170, 255
+#define HSV_PURPLE_PART 191, 255
+#define HSV_MAGENTA_PART 213, 255
+#define HSV_PINK_PART 234, 128
 
 typedef struct {
     bool is_press_action;
     int  state;
     int  layer;
 } tap;
+
+typedef struct {
+    int brightness;
+} LED_stats;
 
 enum {
     MO1 = KC_F13,
