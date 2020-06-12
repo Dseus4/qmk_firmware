@@ -9,7 +9,7 @@
 
 qk_tap_dance_action_t tap_dance_actions[] = {
     [TD_CAPS] = ACTION_TAP_DANCE_DOUBLE(KC_NO, KC_CAPS),
-    [TD_FUNCS] = ACTION_TAP_DANCE_FN_ADVANCED_TIME(NULL, x_finished, x_reset, 300)
+    [TD_FUNCS] = ACTION_TAP_DANCE_FN_ADVANCED_TIME(NULL, x_finished, x_reset, 250)
 };
 
 
@@ -40,7 +40,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [_RGB] = LAYOUT_all(
         _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,
-        _______,    RGB_TOG,    RGB_MOD,    RGB_HUI,    RGB_HUD,    RGB_SAI,    RGB_SAD,    RGB_VAI,    RGB_VAD,    _______,    _______,    _______,    _______,    _______,
+        _______,    RGB_TOG,    RGB_MOD,    RGB_HUI,    RGB_HUD,    RGB_SAI,    RGB_SAD,    RGB_VAI,    RGB_VAD,    _______,    NK_ON,      NK_OFF,     _______,    _______,
         _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,                _______,
         _______,    _______,    _______,    _______,    BL_DEC,      BL_TOGG,    BL_INC,    BL_STEP,    _______,    _______,    _______,    _______,    _______,    _______,    _______,
         _______,    TD(TD_FUNCS),_______,                           _______,    _______,    _______,                TO(_BASE),  _______,    _______,    _______,    _______
