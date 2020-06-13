@@ -62,5 +62,6 @@ enum layers {
     _BASE = 0,
     _NUM,
     _F,
-    _RGB
+    _SYSTEM,
+    _SPEC
 };
